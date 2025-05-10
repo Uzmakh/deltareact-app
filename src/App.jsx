@@ -27,8 +27,8 @@ function App() {
       {/* <Counter/> */}
       {/* <LikeButton /> */}
       {/* <Closure/> */}
-      <LudoBoard />
-      {/* <TodoList/> */}
+      {/* <LudoBoard /> */}
+      <TodoList/>
     </>
   );
 }

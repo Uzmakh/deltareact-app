@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
+import './Todo.css';
 
 export default function TodoList() {
   let [todos, setTodos] = useState([{ task: "Sample task", id: uuidv4(),isDone:false, }]);
@@ -55,7 +56,7 @@ export default function TodoList() {
     );
   };
   return (
-    <>
+    <div className="todo">
       <input
         type="text"
         placeholder="Add task..."
@@ -71,14 +72,16 @@ export default function TodoList() {
       <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
-            <span style={todo.isDone ? { textDecoration:"line-through"}:{}}>{todo.task}</span>
+            <span style={todo.isDone ? { textDecoration: "line-through" } : {}}>
+              {todo.task}
+            </span>
             &nbsp;
-            <button onClick={() => deleteTodo(todo.id)}>delete</button>
-            <button onClick={() => markDone(todo.id)}>Done</button>
+            <button onClick={() => deleteTodo(todo.id)} className="btn">delete</button>
+            <button onClick={() => markDone(todo.id)} className="btn">Done</button>
           </li>
         ))}
       </ul>
       <button onClick={markDoneAllTodo}>Done All</button>
-    </>
+    </div>
   );
 }
