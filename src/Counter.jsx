@@ -3,11 +3,11 @@ import { useState } from "react";
 const Counter = () => {
   // let count = 0;
   let [count, setCount] = useState(0); //initialization
-
+  // console.log(count);
   function incCount() {
     count += 1;
-    console.log(count);
     setCount(count);
+    console.log(count);
   }
 
   return (
