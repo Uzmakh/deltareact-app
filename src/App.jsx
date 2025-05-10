@@ -24,10 +24,10 @@ function App() {
       <MessageBox userName="youzee" textColor="red" />
       <Button /> */}
       {/* <Form /> */}
-      <Counter/>
+      {/* <Counter/> */}
       {/* <LikeButton /> */}
       {/* <Closure/> */}
-      {/* <LudoBoard /> */}
+      <LudoBoard />
       {/* <TodoList/> */}
     </>
   );

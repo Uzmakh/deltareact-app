@@ -12,9 +12,10 @@ const LudoBoard = () => {
 
   let updateBlue = () => {
     // moves.blue += 1;
-    console.log(`moves: ${moves.blue}`);
-    console.log(moves);
-    // setMoves({ ...moves , blue: moves.blue + 1});   //* updated object
+    // console.log(`moves: ${moves.blue}`);
+    // console.log(moves);
+    setMoves({ ...moves, blue: moves.blue + 1 });   //* updated object
+    // converting it to callback
     // setMoves((prevMoves) => {
     //   return { ...prevMoves, blue: moves.blue + 1 };
     // });
@@ -51,10 +52,11 @@ let updateGreen = () => {
   };
   return (
     <div>
-          <h3>Game Begins!</h3>
+      <h3>Game Begins!</h3>
+      
       <div className="board">
-        {/* <p>{arr}</p> */}
-              <p>Blue Moves= { moves.blue}</p>
+        <p>{arr}</p>
+              <p>Blue Moves= {moves.blue}</p>
               <button style={{background:"blue",color:"white"}} onClick={updateBlue}>+1</button>
               <p>Yellow Moves= {moves.yellow }</p>
               <button style={{background:"yellow"}} onClick={updateYellow}>+1</button>
