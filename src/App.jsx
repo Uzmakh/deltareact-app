@@ -23,9 +23,9 @@ function App() {
       <MessageBox userName="Uzma" textColor="grey" />
       <MessageBox userName="youzee" textColor="red" />
       <Button /> */}
-      <Form />
-      <Counter/>
-      {/* <LikeButton /> */}
+      {/* <Form />
+      <Counter/> */}
+      <LikeButton />
       {/* <Closure/> */}
       {/* <LudoBoard /> */}
       {/* <TodoList/> */}
